@@ -1,13 +1,12 @@
 ﻿using ACG_ContosoMVC5.Models;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Web;
 
-namespace ACGContosoMVC5
+namespace ACGContosoMVC5.Data
 {
-    public class UniversityContext: DbSet
+    /// <summary>
+    /// You made this class a DbSet when it should be a DbContext!!!
+    /// </summary>
+    public class UniversityContext: DbContext
     {
 
          public UniversityContext() : base("UniversityContext")
