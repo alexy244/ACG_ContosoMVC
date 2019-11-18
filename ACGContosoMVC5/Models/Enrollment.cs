@@ -11,7 +11,7 @@ namespace ACG_ContosoMVC5.Models
         
         public int CourseID { get; set; }
         public int StudentID { get; set; }
-        public Grades? Grade { get; set; }
+        public Nullable<Grades> Grade { get; set; }
 
         // relationships
         public virtual Course Course { get; set; }
